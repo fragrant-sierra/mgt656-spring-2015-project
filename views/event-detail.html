@@ -29,7 +29,12 @@
     </div>
   <div>
     <a href="/events/new">Create a new event</a>
-    <a href="#" class="donation" onclick=”_gaq.push([‘_trackPageview’,’/vpv/donate’]);>Donate</a>
+    <a href="#" class="donation" onclick="ga('send', {
+  hitType: 'event',
+  eventCategory: 'Donate',
+  eventAction: 'donate',
+  eventLabel: 'donate'
+});">Donate</a>
   </div>
   
 
