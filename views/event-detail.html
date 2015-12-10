@@ -42,12 +42,8 @@
   <div>
 
     <a href="/events/new">Create a new event</a>
-    <a href="#" class="donation" onclick="ga('send', {
-  hitType: 'event',
-  eventCategory: 'Donate',
-  eventAction: 'donate',
-  eventLabel: 'donate'
-});">Donate</a>
+    
+    <a href ="/{% if showDonate %}donate{% else %}support{% endif %}" class={% if showDonate %}"Donate" {% else %}"Support"{% endif %}>{% if showDonate %}Donate{% else %}Support{% endif %}</a>
 
   </div>
 
