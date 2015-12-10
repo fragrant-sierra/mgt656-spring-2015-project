@@ -9,6 +9,7 @@ function index (request, response) {
   var contextData = {
     'title': "Fragrant Ninja's Dojo of Doom",
     'tagline': "Yes, this is what a dojo smells like",
+    'showRSVP': false,
     'events': []
   };
   for(var i=0; i < events.all.length; i++){
@@ -16,6 +17,9 @@ function index (request, response) {
     if(event.date > now){
       contextData.events.push(event);
     }
+  }
+    if(Math.random() > 0.5){
+    contextData.showRSVP = true;
   }
   response.render('index.html', contextData);
 }
