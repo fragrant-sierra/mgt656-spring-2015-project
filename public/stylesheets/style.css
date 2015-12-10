@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* background: url("http://gofitu.com/wp-content/uploads/2015/06/tumblr_static_wf-donuts-1.jpg"); */
 }
 
 a {
@@ -16,4 +17,8 @@ footer {
   padding: 1em;
   border: 1px solid #ddd;
   margin: 2em 0;
+}
+
+ .navbar.transparent.navbar-inverse .navbar-inner {
+   background: rgba(0,0,0,0.4);
 }
