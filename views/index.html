@@ -2,21 +2,38 @@
 
 {% block mainContent %}
 
-  <p>
-    <img id="logo" src="http://www.wpclipart.com/cartoon/people/ninja/ninja_desk.png">
-    Welcome to {{ title }}. {{tagline}}
-  </p>
-  <h2>Here is our list of events</h2>
+<div class="jumbotron">
+    <div style="float:left">
+    <img id="logo" src="https://40.media.tumblr.com/955960ca32b06e1a416dc678f48210bf/tumblr_mq7gpqTkJS1s5jjtzo1_r2_500.png" width="200" height="200" >
+    </div>
+    <div><h1 style="color: #fff; text-shadow: 2px 2px #000;">Welcome to {{ title }}! </h1>
+    <h3 style="color: #fff; text-shadow: 2px 2px #000; margin-top: -5px">{{tagline}}</h3>
+    </div>
+    <div style="margin-top: 20px"><a id="new" href="/events/new" class="btn btn-success btn-lg" style="padding: 20px;">Start Your Own Donut Club Event</a></div>
+    <div style="clear:both;"></div>
+</div> 
+<div class="homepage_underbanner">
+  <div class="col-md-4">
+  <h3>Browse Upcoming Events</h3>
  <div>
     {% include "fragments/events-list.html" %}
   </div>
-  <p>
-    Check out the <a href="/about">About us</a> page
-    as well as the <a href="/events">Events</a> page.
-  </p>
-  <p>
-    <a id="new" href="/events/new">Create a new event</a>
-  </p>
-
+  <a id="new" href="/events/new">Create a new event</a>
+  </div>
+  <div class="col-md-4">
+    <h3> Hungry for more?</h3>
+    <ul>
+    <li>Learn how our lives derailed on the <a href="/about">About Us</a> page</li>
+    <li>Learn how to spot the early signs of a heart attack on the <a href="/info">Info</a> page</li>
+    <li>Read the <a href="/rules">Rules</a> rules for setting up your own Donut Clubpage</li>
+    </ul>
+    </div>
+    <div class="col-md-4">
+      <h3>Come stuff your face. Don't be shy.</h3>
+      <p style="font-sie: 13pt">Meet undateable, greasy gasbags!</p>
+    <p><a href="/events">Donut Club Events</a></p>
+  </div>
+    <div style="clear:both;"></div>
+</div>
 {% endblock %}
 

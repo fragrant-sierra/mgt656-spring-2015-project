@@ -4,7 +4,9 @@
  * Controller that renders our about page.
  */
 function info (request, response) {
-  var contextData = {};
+  var contextData = {
+    'title': "Donut Club - Info"
+  };
   response.render('info.html', contextData);
 }
 

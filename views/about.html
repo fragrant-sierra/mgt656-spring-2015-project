@@ -1,59 +1,56 @@
 {% extends "layout.html" %}
 
   <style>
-  body
-     {
-      text-align: left;
-      background: url("http://jenruhman.com/freshjen/ninjas.jpg");
-      background-size: cover;
-      color: #fff;
-      font-family: arial;
-      font-size: 18;
-     }
-     
-    ul
-     {
-      display: inline;
-     }
   </style>
 
 <body>
 {% block header %}  
   <header>
-    <h1>About Us</h1>
-    <ul>
-      <li><a href="/events/new">New Event</a></li>
-      <li><a href="/events">Browse Events</a></li>
-    </ul>
+<div class="jumbotron" style="margin-left: -20px">
+    <h1 style=" color: #fff; text-shadow: 2px 2px #000;">About Us</h1>
+</div>
   </header>
 {% endblock %}
 {% block mainContent %}
-  <h2>Story</h2>
-  <p>Hi! We are Fragrant Sierra - code ninjas [hence - 'fragrant-ninja'!] who offer you the world's best event organizing app!</p>
-  <h2>People</h2>
-  <p>
-  <ul>
-     <div>
-     <h3><span id="shaun-name">Shaun </span></h3>
-     <span id="shaun-headshot"> <img id="shaun-headshot" src="http://i.imgur.com/17FTdVn.gif" width="150" height="120" class="img-rounded">
-     </span>
-     </div>
-     <div> 
-     <h3><span id="matt-name">Matthew </span></h3>
-     <span id="matt-headshot"> <img id="matt-headshot" src="https://media.giphy.com/media/13x0OguvAGp2k8/giphy.gif" width="150" height="120" class="img-rounded">
-     </span>
-     </div>
-     <div> 
-     <h3><span id="lily-name">Lily </span></h3>
-     <span id="lily-headshot"> <img id="lily-headshot" src="http://3.bp.blogspot.com/-nG-MGrnh8eM/UnkMhQEY_9I/AAAAAAAABEc/hHuKzLC_7MY/s1600/tumblr_inline_mo8al0OwwR1qimd9m.gif" width="150" height="120" class="img-rounded"> </span>
-     </div>
-     <div> 
+<div class="col-md-6">
+  <h2>Origin Story</h2>
+  <p style="font-size: 14pt">Inspired by the <a href="http://mmqb.si.com/mmqb/2015/10/20/nfl-minnesota-vikings-donut-club">Minnesota Vikings' Donut Club</a>, we set out to bring donut clubs to the masses.</p>
+  <p style="font-size: 14pt">We are about happiness, nay, JOY!  The type of joy only 600 calories of fried pastry can provide.</p>
+  <p style="font-size: 14pt">Come live the dream with us...</p>
+  <a id="new" href="/events/new" class="btn btn-success btn-med" style="padding: 20px;">Start Your Own Donut Club</a>
+  
+  </div>
+<div class="col-md-6">
+  <img src="https://pbs.twimg.com/media/CSFdbZ-UcAE7YST.jpg" width="500" />
+  <p>Just look at the joy in their eyes!</p>
+  </div>
+     <div style="clear:both;"></div>
+  
+  <div class="page-header">
+  <h2>Who We Are (kind of)</h2>
+  </div>
+       <div class="people_tiles"> 
      <h3><span id="arjit-name">Arjit </span></h3>
-     <span id="arjit-headshot"> <img id="arjit-headshot" src="http://blog.photobucket.com/wp-content/uploads/2014/05/tumblr_m6wte5C16T1rvonpwo1_400.gif" width="150" height="120" class="img-rounded">
+     <span id="arjit-headshot"> <img id="arjit-headshot" src="http://blog.photobucket.com/wp-content/uploads/2014/05/tumblr_m6wte5C16T1rvonpwo1_400.gif" width="200" height="160" class="img-rounded">
     </span>
     </div>
-  </ul>
-  </p>
+         <div class="people_tiles">
+     <h3><span id="lily-name">Lily </span></h3>
+     <span id="lily-headshot"> <img id="lily-headshot" src="http://i.imgur.com/khij9zQ.gif" width="200" height="160" class="img-rounded"> </span>
+     </div>
+          <div class="people_tiles">
+     <h3><span id="matt-name">Matthew </span></h3>
+     <span id="matt-headshot"> <img id="matt-headshot" src="https://media.giphy.com/media/13x0OguvAGp2k8/giphy.gif" width="200" height="160" class="img-rounded">
+     </span>
+     </div>
+    <div class="people_tiles">
+     <h3><span id="shaun-name">Shaun </span></h3>
+     <span id="shaun-headshot"> <img id="shaun-headshot" src="http://i.imgur.com/17FTdVn.gif" width="200" height="160" class="img-rounded">
+     </span>
+     </div>
 
+
+
+    <div style="clear:both;"></div>
 </body>
 {% endblock %}

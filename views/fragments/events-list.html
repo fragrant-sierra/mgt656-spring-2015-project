@@ -5,7 +5,7 @@
         
       <a href ="/events/{{event.id}}" class={% if showRSVP %}"RSVP" {% else %}"no_RSVP"{% endif %}>{% if showRSVP %}RSVP{% endif %} {{event.title}}</a>
       <time datetime="{{event.date}}">{{event.date|prettyDate}}</time>
-      {{event.attending.length}} attending so far.
+      | {{event.attending.length}} attending so far.
     </li>
   {% endfor %}
 </ul>

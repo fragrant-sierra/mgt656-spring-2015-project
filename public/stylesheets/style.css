@@ -4,6 +4,11 @@ body {
   /* background: url("http://gofitu.com/wp-content/uploads/2015/06/tumblr_static_wf-donuts-1.jpg"); */
 }
 
+ul {
+    list-style:none;
+    padding-left:0;
+}
+
 a {
   color: #00B7FF;
 }
@@ -21,4 +26,35 @@ footer {
 
  .navbar.transparent.navbar-inverse .navbar-inner {
    background: rgba(0,0,0,0.4);
+}
+
+.jumbotron {
+  background: url("http://www.lazezh.com/uploads/jpg/lazezh_fa16850bc3.jpg") no-repeat;
+  background-size: 100% auto;
+  margin-left: -50px;
+  margin-right: -50px;
+  min-height: 200px;
+}
+
+ h1 .jumbotron_header {
+ color: #fff;
+ text-shadow: 2px 2px #000;
+}
+
+.people_tiles {
+  float: left;
+  width: 250px;
+}
+
+.homepage_underbanner {
+  background-color: #F7F7F7; 
+  margin: -30px -15px 0px -15px;
+  padding: 20px 70px 20px 70px;
+}
+
+.homepage_tiles {
+  float: left;
+  margin-right: 30px;
+  width: 300px;
+  min-height: 200px;
 }
