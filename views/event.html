@@ -1,5 +1,12 @@
 {% extends "layout.html" %}
 
+{% block header %}  
+  <header>
+<div class="jumbotron" style="margin-left: -20px">
+    <h1 style=" color: #fff; text-shadow: 2px 2px #000;">Events</h1>
+</div>
+  </header>
+{% endblock %}
 {% block mainContent %}
   <div>
     {% include "fragments/events-list.html" %}
@@ -12,7 +19,6 @@
 
 {% block footer %}
   <footer>
-    Look at me customize the footer. The time is now {{time}}.
     <a href="/">Home</a> | <a href="/about">About us</a>.
   </footer>
 {% endblock %}
