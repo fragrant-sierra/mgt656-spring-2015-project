@@ -7,8 +7,8 @@ var events = require('../models/events');
 function index (request, response) {
   var now = new Date();
   var contextData = {
-    'title': "Fragrant Ninja's Dojo of Doom",
-    'tagline': "Yes, this is what a dojo smells like",
+    'title': "Donut Club",
+    'tagline': "We meet and eat donuts. Let's not think too hard about it.",
     'showRSVP': false,
     'events': []
   };
